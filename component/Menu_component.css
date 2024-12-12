@@ -1,0 +1,94 @@
+/* 초기화 및 공통 스타일 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #aecbfa;
+    padding: 40px;
+    justify-content: left;
+  }
+  
+  /* 메인페이지 스타일 */
+  body.main-page {
+    font-family: Arial, sans-serif;
+    background-color: #ebeff6;
+    line-height: 1.0; /* 높이를 맞추기 위해 line-height 조정 */
+  }
+  
+  /* 메뉴바 스타일 */
+  .menu {
+    display:flex;
+    width: 600px;
+    text-align: center;
+    margin-left: 50px;
+    margin-top:80px
+  }
+  
+  
+  .menu a {
+    color: #4a90e2;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+  }
+  
+  .menu a:hover {
+    text-decoration: underline;
+  }
+  
+  /* 구분자 스타일 */
+  .menu .separator {
+    color: #125096; 
+    font-size: 25px;
+    padding: 0 10px; 
+  }
+  
+  .welcome {
+    display: flex; 
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 20px; 
+    width: auto; 
+  }
+  
+  .welcome button {
+      width: 85px;
+      padding: 10px;
+      background-color: #ff4c4c;
+      color: #fff;
+      font-weight: bold;
+      border: none;
+      border-radius: 80px;
+      cursor: pointer;
+      margin-left: 10px;
+      margin-bottom: 10px;
+  
+  }
+  
+  .welcome button:hover {
+      background-color: #e63946;
+  }
+  
+  /* 반응형 디자인: 창 너비가 500px 이하일 때 레이아웃 조정 */
+  @media (max-width: 500px) {
+    .menu {
+        display: block; /* 수직 정렬 */
+        width: 100%; /* 전체 너비 사용 */
+        text-align: left; /* 가운데 정렬 */
+    }
+  
+    .welcome {
+        position: static; /* 고정 위치 해제 */
+        margin: 20px auto; /* 가운데 정렬 */
+        text-align: center; /* 텍스트 가운데 정렬 */
+        display: block;
+        margin: 1px
+    
+    }
+  }

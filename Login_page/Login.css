@@ -1,0 +1,188 @@
+/* 페이지 초기 설정 */
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*로그인 페이지 스타일*/
+body.login-page {
+    font-family: Arial, sans-serif;
+    background-color: #e8f0ff;
+    display: flex;                /* Flexbox 사용 */
+    justify-content: center;      /* 가로 가운데 정렬 */
+    align-items: center;          /* 세로 가운데 정렬 */
+    height: 100vh;                /* 화면 전체 높이 차지 */
+    margin: 0;                    /* 기본 margin 제거 */
+    
+}
+
+/* 환영인사 컨테이너 */
+.container1 {
+    width: 400px;
+    padding: 20px;
+    position: absolute;
+    top : 330px;
+    left: 50%;
+    transform:translateX(-50%);
+    background-color: #f7faff;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* 로그인 입력창 컨테이너 */
+.container2 {
+    width: 400px;
+    padding: 20px;
+    position: absolute;
+    top:430px;
+    left: 50%;
+    transform:translateX(-50%);
+    background-color: #f7faff;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    
+}
+
+/* 로고 */
+.logo_login {
+    width: 60px;
+    height: 60px;
+    background-color: #aecbfa;
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+    /* 박스 상단 중앙 위치에 고정 */
+    position: absolute;
+    top: 26%;
+    left: 50%;
+    transform:translateX(-50%);
+
+}
+
+/* 환영 메시지 스타일 */
+.welcome-message {
+    background-color: #d1e7ff;
+    color: #333;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 50px;
+    border-radius: 5px;
+}
+
+/* 로그인 박스 스타일 */
+.login-form {
+    background-color: #d1e7ff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* ID, PW 폰트 */
+label {
+    width: 50px;
+    color: #333;
+    margin-right: 7px;
+    font-weight: bold;
+}
+
+/* ID/PW 입력칸 스타일 */
+input[type="text"],
+input[type="password"] {
+    width: 80%;
+    padding: 8px;
+    border: 1px solid #b3d4fc;
+    border-radius: 5px;
+    background-color: #ffffff;
+   
+}
+
+/* ID/PW 입력칸 상하 버튼 간격 */
+input[type="text"]{
+    margin-left:9.6px;
+    margin-bottom:5px;
+}
+
+/* login 버튼 스타일 */
+.login button/*[type="submit"]*/ {
+    width: calc(100% - 20px);
+    padding: 10px;
+    background-color: #aecbfa;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+   
+}
+
+/* login 버튼 효과 */
+.login button/*[type="submit"]*/:hover {
+    background-color: #8bb6e9;
+    
+}
+
+/*실패시 에러 메시지*/
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+
+/* 아이디/비번 찾기 버튼 간격 */
+.options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+/* 아이디/비번 찾기 스타일 */
+.options button {
+    width: 90%;
+    margin : 10px;
+    padding: 10px;
+    background-color: #d1e7ff;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* 아이디/비번 찾기 버튼 효과 */
+.options button:hover {
+    background-color: #aecbfa;
+}
+
+/* 회원이 아니신가요?폰트 */
+.signup {
+    text-align: center;
+    color: #333;
+}
+
+/* 회원가입하기 폰트 */
+.signup a {
+    color: #4a90e2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* 회원가입하기 누르면 언더바 */
+.signup a:hover {
+    text-decoration: underline;
+}

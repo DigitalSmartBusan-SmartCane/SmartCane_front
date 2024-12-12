@@ -1,0 +1,161 @@
+/* 초기화 및 공통 스타일 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 전체 페이지 스타일 */
+body.edit-page {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+}
+
+/* 제목 스타일 */
+.edit-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+/* 폼 스타일 */
+.edit-container {
+  max-width: 650px;
+  margin: 100px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.edit-form-group {
+  margin-bottom: 20px;
+}
+
+.edit-form-group label {
+  width: 150px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  display: flex;
+  margin-left:60px;
+  margin-bottom: 10px;
+}
+
+.edit-form-group input {
+  margin-left:60px;
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+ 
+}
+
+.edit-form-group button {
+  width: 100px;
+  margin-left: 18px;
+}
+
+.edit-form-group input:focus {
+  outline: none;
+  border-color: #6189ca;
+}
+
+/* 버튼 스타일 */
+.save-button {
+  background-color: #6189ca;
+  color: #fff;
+}
+.save-button:hover {
+  background-color: #6191ca;
+}
+
+
+.cancel-button {
+  background-color: #8d9ab0;
+  color: #fff;
+}
+.cancel-button:hover{
+  background-color: #8d9ab5;
+}
+
+  /* 폼 스타일 */
+.edit-container {
+    max-width: 650px;
+    margin: 100px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  /* 라벨과 input의 정렬 */
+  .form-group {
+    display: flex;
+    align-items: center;
+    /* 라벨과 input을 수직 정렬 */
+    justify-content: space-between;
+    /* 라벨과 input을 양쪽 정렬 */
+    margin-bottom: 20px;
+  }
+
+  .form-group label {
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
+    flex: 1;
+    /* 라벨 너비를 일정하게 */
+  }
+
+  .form-group input {
+    flex: 2;
+    /* input 박스가 라벨보다 넓게 */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  .form-group input:focus {
+    outline: none;
+    border-color: #6189ca;
+  }
+
+  /* 버튼 정렬 */
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .buttons button {
+    width: 150px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+  }
+  .save-button {
+    background-color:  #6189ca;
+    color: #fff;
+  }
+
+  .save-button:hover {
+    background-color: #8d9ab5;
+  }
+
+  .cancel-button {
+    background-color: #8d9ab0;
+    color: #fff;
+  }
+
+  .cancel-button:hover {
+    background-color: #8d9ab5;
+  }

@@ -1,0 +1,59 @@
+/* 전체 컨테이너 */
+.heartbeat-container {
+    display: flex;
+    justify-content: center; /* 왼쪽부터 나열 */
+    align-items: center; /* 수직 정렬 */
+    gap: 20px; /* 그래프와 박스 간 간격 */
+    padding: 20px;
+    background-color: #f4f4f4; /* 배경색 */
+    border-radius: 10px;   
+}
+
+/* 심박수 박스 스타일 */
+.heartbeat-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px; 
+    height: 120px; 
+    background-color: #ffffff; 
+    border: 1px solid #ddd;
+    border-radius: 10px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
+}
+
+.heartbeat-box h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.heartbeat-box p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e63946;
+    margin: 0;
+}
+
+/* Plotly 그래프 스타일 */
+.plot-wrapper { 
+    max-width: 500px; /* 그래프 최대 너비 제한 */
+    height: auto; /* 높이를 자동으로 조정 */
+    padding: 10px; /* 내부 여백 */
+}
+
+/* 반응형 스타일 */
+@media (max-width: 768px) {
+    .heartbeat-container {
+        flex-direction: column; /* 수직 정렬 */
+        align-items: center; /* 중앙 정렬 */
+    }
+
+    .plot-wrapper {
+        flex: 1 1 100%; /* 화면 폭을 모두 차지 */
+        order: 1; /* 그래프를 박스 아래로 이동 */
+        max-width: 90%; /* 화면 크기에 비례하여 줄어듦 */
+    }
+}
