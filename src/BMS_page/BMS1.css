@@ -1,0 +1,37 @@
+/* 전체 컨테이너 */
+.bms1-container {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+}
+
+/* 그리드 컨테이너 스타일 */
+.grid-container {
+  display: grid; /* grid 레이아웃 활성화 */
+  grid-template-columns: repeat(2, 1fr); /* 두 개의 열 */
+  grid-template-rows: auto auto; /* 두 개의 행 */
+  gap: 20px; /* 박스 간 간격 */
+  background-color: #f4f4f4; /* 배경색 */
+  border-radius: 10px; /* 둥근 테두리 */
+  padding: 20px; /* 내부 여백 */
+  width: fit-content; /* 내용 크기에 맞게 컨테이너 크기 조정 */
+  height: fit-content; /* 내용 크기에 맞게 컨테이너 높이 조정 */
+}
+  
+  
+  /* 반응형 처리 */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* 한 열로 변경 */
+    justify-items: center; /* 그래프를 가로로 중앙 정렬 */
+    width: 100%; /* 화면 크기 전체로 확장 */
+  }
+
+  .plot-container {
+    max-width: 100%; /* 작은 화면에서 그래프가 화면 너비에 맞게 조정 */
+  }
+}

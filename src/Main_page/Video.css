@@ -1,0 +1,11 @@
+.video {
+    margin-left: 100px;
+}
+
+.video-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    display: block; 
+    margin-bottom: 10px; /* 이미지와 간격을 두기 위한 여백 추가 */
+}

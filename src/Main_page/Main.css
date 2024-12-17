@@ -1,0 +1,73 @@
+/* 초기화 및 공통 스타일 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  /* 메인페이지 스타일 */
+  body{
+    font-family: Arial, sans-serif;
+    background-color: #ebeff6;
+    line-height: 1.5; /* 높이를 맞추기 위해 line-height 조정 */
+  }
+  
+  /* 메인 컨테이너 */
+.main-container {
+  display: flex; /* 수평으로 나열 */
+  gap:300px;
+  box-sizing: border-box;
+}
+
+/* 실시간 영상 스타일 */
+.video-stream {
+  flex: 2; /* 너비 비율 */
+  max-width: 640px; /* 최대 너비 제한 */
+  padding: 10px;
+}
+
+/* Heartbeat 그래프 스타일 */
+.heartbeat {
+    display: flex;
+    box-sizing: border-box; /* 패딩 포함 계산 */
+}
+
+  /* 반응형 디자인: 창 너비가 500px 이하일 때 레이아웃 조정 */
+  @media (max-width: 500px) {
+    .main-container {
+      flex-direction: column; /* 수직 정렬 */
+      gap: 20px; /* 수직 간격 조정 */
+  }
+  
+    .menu {
+        display: block; /* 수직 정렬 */
+        width: 100%; /* 전체 너비 사용 */
+        text-align: left; /* 가운데 정렬 */
+    }
+  
+    .welcome {
+        position: static; /* 고정 위치 해제 */
+        margin: 20px auto; /* 가운데 정렬 */
+        text-align: center; /* 텍스트 가운데 정렬 */
+        display: block;
+        margin: 1px
+    
+    }
+
+    .video-stream {
+      width: 100%; /* 전체 너비 사용 */
+      max-width: 100%; /* 최대 너비 제한 해제 */
+    }
+  
+    .heartbeat-container {
+      width: 100%; /* 전체 너비 사용 */
+      max-width: 100%; /* 최대 너비 제한 해제 */
+    }
+    
+    .heartbeat {
+      width: 100%; /* 전체 너비 사용 */
+      max-width: 100%; /* 최대 너비 제한 해제 */
+    }
+  }
+  

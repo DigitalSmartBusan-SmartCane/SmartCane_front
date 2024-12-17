@@ -1,0 +1,175 @@
+/* 초기화 및 공통 스타일 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 전체 페이지 스타일 */
+body.join-page {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+}
+
+/* 제목 스타일 */
+.join-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+/* 폼 스타일 */
+.join-container {
+  max-width: 650px;
+  margin: 100px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.join-form-group {
+  margin-bottom: 20px;
+}
+
+/*항목 글자*/
+.join-form-group label {
+  width: 100px;
+  margin-left: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  display: flex;
+
+  margin-bottom: 5px;
+}
+
+/*항목 입력칸*/
+.join-form-group input[type="text"],
+.join-form-group input[type="password"],
+.join-form-group input[type="email"] {
+  width: 400px;
+  margin-left: 20px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.join-form-group button {
+  width: 100px;
+  margin-left: 18px;
+  
+}
+
+.join-form-group input:focus {
+  outline: none;
+  border-color: #6189ca;
+}
+
+/*돌아가기 버튼*/
+.backk-button{
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #486dae;
+  color: #fff;
+  margin-left:200px;
+}
+/*가입하기 버튼*/
+.join-button {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #486dae;
+  color: #fff;
+  margin-left:10px;
+}
+.join-button:hover {
+  background-color: #4767ac;
+}
+
+/* 중복확인, 인증번호 발송 버튼 스타일 */
+.email-verification button, .ID-verification button {
+  width:150px;
+  padding: 10px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #7898cf;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom:7px;
+}
+
+/* 버튼 호버 효과 */
+.email-verification button:hover {
+  background-color: #3b5c92;
+  /* 호버 시 배경색 변경 */
+}
+
+/* 버튼 활성화 상태 */
+.email-verification button:active {
+  background-color: #324d7a;
+  /* 클릭 시 배경색 변경 */
+}
+
+/* 버튼 비활성화 상태 */
+.email-verification button:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+  /* 비활성화 커서 모양 */
+}
+
+.verification-group button{
+  width:150px;
+  padding: 10px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #7898cf;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+
+
+.error-text {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+
+/*
+.error-message {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 15px;
+}*/
+
+
+.success-message {
+  color: green;
+  font-size: 12px;
+  margin-top: 5px;
+  margin-left: 20px;
+ 
+}
+
